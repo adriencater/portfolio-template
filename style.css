@@ -55,6 +55,9 @@ h1 { color: var(--Couleur-Principale); }
 
 
 
-
+/* //////////////////////////////////////// */
+/* // MISE EN PAGE //////////////////////// */
 
 section{ min-height: 100vh; }
+
+.vignette { max-width: 256px; }

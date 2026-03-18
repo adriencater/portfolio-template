@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Votre Nom – Designer</title>
+
+	<link rel="stylesheet" href="lightbox/dist/css/lightbox.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,8 +22,16 @@
 	<section id="Graphisme">
 		<h2>Graphisme</h2>
 
-		<a href="images/tk3_big.jpg">
-			<img src="images/tk3_web.jpg" alt="">
+		<a href="images/tk1_big.jpg" data-lightbox="graphisme">
+			<img class="vignette" src="images/tk1_web.jpg" alt="">
+		</a>
+
+		<a href="images/tk2_big.jpg" data-lightbox="graphisme">
+			<img class="vignette" src="images/tk2_web.jpg" alt="">
+		</a>
+
+		<a href="images/tk3_big.jpg" data-lightbox="graphisme">
+			<img class="vignette" src="images/tk3_web.jpg" alt="">
 		</a>
 
 	</section>
@@ -33,5 +43,26 @@
 	<section id="Illustration">
 		<h2>Illustration</h2>
 	</section>
+
+
+
+<script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>	
+<script>
+	lightbox.option({
+	  'resizeDuration': 50,
+	  'fadeDuration': 50,
+	  'imageFadeDuration': 0,
+	  'showImageNumberLabel': false,
+	  'wrapAround': true
+	})
+</script>
+<style>
+	:root{
+		--lb-image-border-width: 1px;
+		--lb-border-radius: 0;
+	}
+</style>
+
+
 </body>
 </html>
